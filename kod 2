@@ -1,0 +1,16 @@
+class Drone
+private:
+    int yuk;
+    int hiz;
+    int yukseklik;
+public:
+    void ucusGuvenligiKontrol () {
+        if (yuk > 600)
+            cout << "Ağır yük - Uçus reddedildi!"<< endl;
+       else if (hiz > 100)
+            cout<< " Hız çok yüksek - Uçuş riski! hızı düşürün yoksa dron kapatılacaktır" << endl;
+        else if (yukseklik > 200)
+            cout << "Yükseklik sınırı aşıldı!" << endl;
+        else cout << "Drone uçuşa hazır" << endl;
+    }
+}
